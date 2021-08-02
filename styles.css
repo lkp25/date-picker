@@ -1,0 +1,47 @@
+.date-picker-box{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(107, 107, 172);
+}
+body{
+    background-color: rgb(39, 38, 38);
+}
+.date-picker-header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.month-year{
+    text-align: center;
+    font-weight: bold;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+.arrow{
+    max-height: 1.5rem;
+}
+.calendar-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.day{
+    text-align: center;
+    font-weight: bold;
+}
+.date{
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+.date:hover{
+    background-color: rgb(137, 99, 172);
+}
+.date-picker-other-month-date{
+    color:gray;
+    cursor: not-allowed;
+}
+.date-picker-other-month-date:hover{
+    background-color: rgb(240, 239, 241);
+    
+}
