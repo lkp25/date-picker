@@ -1,7 +1,9 @@
 .date-picker-box{
-    width: 400px;
-    height: 400px;
-    background-color: rgb(107, 107, 172);
+    width: 300px;
+   padding: 0.2rem;
+   box-shadow: 3px 3px 5px black;
+   border-radius: 5px;
+    background-color: rgb(189, 189, 196);
     display: none;
 }
 .calendar-open{
@@ -22,10 +24,13 @@ body{
 }
 .arrow{
     max-height: 1.5rem;
+    width: fit-content;
+    cursor: pointer;
 }
-.calendar-grid{
+.weekdays-grid{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 0.5rem;
     
 }
 .dates-grid{
@@ -43,18 +48,21 @@ body{
     width: 100%;
     cursor: pointer;
     border: none;
+    border-radius: 5px;
+    background-color: rgb(189, 189, 196);
 }
 .date:hover{
-    background-color: rgb(137, 99, 172);
+    background-color: rgb(170, 131, 206);
 }
 .date-picker-other-month-date{
-    color:gray;
-    cursor: not-allowed;
+    color:rgb(139, 136, 136);
+    
 }
 .date-picker-other-month-date:hover{
     background-color: rgb(240, 239, 241);
     
 }
 .selected{
-    background-color: crimson;
+    background-color: rgb(235, 155, 171);
+    font-weight: bold;
 }
