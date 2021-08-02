@@ -2,6 +2,10 @@
     width: 400px;
     height: 400px;
     background-color: rgb(107, 107, 172);
+    display: none;
+}
+.calendar-open{
+    display: block;
 }
 body{
     background-color: rgb(39, 38, 38);
